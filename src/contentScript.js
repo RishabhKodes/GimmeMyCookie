@@ -1,9 +1,9 @@
 var
-	stop = false,                                                               // stop checkings
-	removed_first = false,                                                      // when 1st element is removed
-	alpha = /(?:\d+, ){3}([\d.]+)/,                                             // find alpha channel in rgba
-	instagram = Boolean(~window.location.hostname.indexOf('instagram.com')),    // returns true if it's instagram
-	oath = Boolean(~window.location.href.indexOf('oath.com/collectConsent')),   // returns true if it's oath
+	stop = false,                                                               
+	removed_first = false,                                                      
+	alpha = /(?:\d+, ){3}([\d.]+)/,                                             
+	instagram = Boolean(~window.location.hostname.indexOf('instagram.com')),    
+	oath = Boolean(~window.location.href.indexOf('oath.com/collectConsent')),   
 	position = ['fixed', 'sticky'],
 	specific = ['div#cnsh', 'div#cnso','div#ticker','div[data-testid="cookie-policy-banner"]','div#global-alert-queue','div.eu-cookie-notice','div#j-aliexpress-notice'],
 	keywords = ['cookie', 'privacy settings',];
@@ -19,7 +19,7 @@ document.onreadystatechange = () => {
 
 function removeEl (el) {
 	el.parentNode.removeChild(el);
-	console.log('Removed the Cookie BS--> ', el);
+	console.log('The cookie disappeared!', el);
 	!removed_first && removedFirst();
 	return true;
 }
