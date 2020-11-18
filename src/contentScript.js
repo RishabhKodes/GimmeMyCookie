@@ -5,8 +5,8 @@ var
 	instagram = Boolean(~window.location.hostname.indexOf('instagram.com')),    
 	oath = Boolean(~window.location.href.indexOf('oath.com/collectConsent')),   
 	position = ['fixed', 'sticky'],
-	specific = ['div#cnsh', 'div#cnso','div#ticker','div[data-testid="cookie-policy-banner"]','div#global-alert-queue','div.eu-cookie-notice','div#j-aliexpress-notice'],
-	keywords = ['cookie', 'privacy settings',];
+	specific = ['div#cnsh', 'div#cnso','div#ticker','div[data-testid="cookie-policy-banner"]','div#global-alert-queue','div.eu-cookie-notice'],
+	keywords = ['cookie', 'privacy settings'];
 
 main();
 
